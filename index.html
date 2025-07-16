@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <title>Fresh Cosmetic Clinics</title>
+  </head>
+
+  <body>
+    <!--top-bar-->
+    <div class="bg-[#fce4f2] md:py-6 py-4 lg:px-12 md:px-8 px-4">
+      <div
+        class="w-full mx-auto flex justify-between md:items-center items-start text-[#8d8e92]"
+      >
+        <div class="flex items-start md:gap-3 gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            focusable="false"
+            class="md:w-6 w-4 mt-1"
+            color="rgb(141, 142, 146)"
+            style="fill: rgb(141, 142, 146); color: rgb(141, 142, 146)"
+          >
+            <g color="rgb(141, 142, 146)" weight="fill">
+              <path
+                d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"
+              ></path>
+            </g>
+          </svg>
+          <div>
+            <span class="lg:text-lg md:text-md sm:text-sm text-xs"
+              >Call/Text Us Now</span
+            >
+            <div class="lg:text-md sm:text-sm text-xs mt-1">416.732.2219</div>
+          </div>
+        </div>
+
+        <!-- Center Section: Locations -->
+        <div class="flex items-center md:space-x-8 space-x-4 text-sm">
+          <div class="flex md:items-center items-start gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="md:w-6 w-4 mt-1"
+              viewBox="0 0 256 256"
+              focusable="false"
+              color="rgb(141, 142, 146)"
+              style="fill: rgb(141, 142, 146); color: rgb(141, 142, 146)"
+            >
+              <g color="rgb(141, 142, 146)" weight="fill">
+                <path
+                  d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
+                ></path>
+              </g>
+            </svg>
+
+            <div>
+              <span class="lg:text-lg md:text-md sm:text-sm text-xs"
+                >Toronto: 132 Atlantic Avenue</span
+              >
+              <div class="lg:text-lg md:text-md sm:text-sm text-xs mt-1">
+                Thornhill: 7163 <br class="md:hidden flex" />
+                Yonge Street Suite 269
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:items-center items-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="md:w-6 w-4 mt-1"
+            viewBox="0 0 256 256"
+            focusable="false"
+            color="rgb(141, 142, 146)"
+            style="fill: rgb(141, 142, 146); color: rgb(141, 142, 146)"
+          >
+            <g color="rgb(141, 142, 146)" weight="fill">
+              <path
+                d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
+              ></path>
+            </g>
+          </svg>
+
+          <span class="lg:text-lg md:text-md sm:text-sm text-xs mt-1"
+            >Book Now</span
+          >
+        </div>
+        <div
+          class="flex flex-col items-center lg:text-3xl md:text-2xl sm:text-xl text-lg"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <!--Navbar-->
+    <nav class="bg-[#addebbb5] mt-4">
+      <div
+        class="flex flex-wrap items-center justify-between mx-auto py-4 lg:px-8 md:px-8 px-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./assets/images/logo.png" class="w-32" alt="Logo" />
+        </a>
+
+        <!-- Mobile toggle button -->
+        <button
+          id="menu-toggle"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+
+          <!-- Hamburger Icon -->
+          <svg
+            id="menu-open-icon"
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+
+          <!-- Close Icon -->
+          <svg
+            id="menu-close-icon"
+            class="w-6 h-6 hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <!-- Navigation menu -->
+        <div
+          id="navbar-dropdown"
+          class="hidden w-full lg:block lg:w-auto max-h-0 overflow-hidden transition-all duration-300 ease-in-out lg:max-h-full lg:overflow-visible"
+        >
+          <ul
+            class="flex flex-col text-black lg:gap-0 gap-4 text-sm font-[600] p-4 lg:p-0 lg:bg-transparent rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block hover:text-gray-500 duration-300"
+                aria-current="page"
+                >About US</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block hover:text-gray-500 duration-300"
+                aria-current="page"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block hover:text-gray-500 duration-300"
+                aria-current="page"
+                >Book An Appointment</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block hover:text-gray-500 duration-300"
+                aria-current="page"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block hover:text-gray-500 duration-300"
+                aria-current="page"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                aria-current="page"
+                class="w-56 lg:w-auto text-sm lg:ml-0 -ml-2 lg:my-0 lg:inline flex my-2 px-5 py-3 bg-[#aedfbc] text-white rounded-full duration-300 hover:bg-[#86d19b]"
+                >MAKE AN APPOINTMENT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero section-->
+    <section class="w-full md:px-8 px-4 lg:px-12 pb-12 md:pt-0 pt-6">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+        <!-- Left Text Section -->
+        <div class="w-full md:w-1/2 mb-10 md:mb-0">
+          <h1
+            class="text-3xl md:text-4xl lg:text-6xl leading-tight md:mb-6 mb-4"
+          >
+            Enhancing your<br class="md:flex hidden" />
+            natural beauty
+          </h1>
+          <p class="text-gray-600 mb-6 text-md">
+            Fresh Cosmetic Clinic is Toronto’s go-to destination for advanced
+            aesthetic treatments — and it shows. Rated #1 across multiple
+            platforms, we specialize in Botox, dermal fillers, PRP, Sculptra,
+            and more! Our expert team uses cutting-edge techniques to deliver
+            natural-looking, confidence-boosting results.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[#f8a5fa] text-xs hover:bg-pink-300 font-semibold py-3 px-6 rounded-full transition duration-300"
+          >
+            BOOK AN APPOINTMENT
+          </a>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img
+            src="./assets/images/hero-image.png"
+            alt="Woman"
+            class="rounded-lg w-full max-w-md object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <!--second section-->
+    <section class="w-full md:px-8 px-6 lg:px-12 py-12">
+      <div class="mx-auto flex flex-col-reverse md:flex-row items-start gap-6">
+        <!-- Left Image -->
+        <div class="w-full md:w-1/2 flex justify-center">
+          <img
+            src="./assets/images/woman2.png"
+            alt="Beauty"
+            class="rounded-lg w-full max-w-xl md:h-[780px] object-cover"
+          />
+        </div>
+
+        <!-- Right Content -->
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl mb-4">
+            Why You Should Choose Our Us for Your Service?
+          </h2>
+          <p class="text-gray-600 mb-6">
+            <strong>Experience the Fresh difference in cosmetic care.</strong>
+            Our expert nurse injectors specialize in advanced treatments like
+            Botox, dermal fillers, Sculptra, PRP, and exosomes—delivering
+            natural-looking results with personalized, professional care
+          </p>
+
+          <!-- Box 1 -->
+          <div
+            class="flex items-start border border-gray-300 rounded-2xl p-6 mb-4 shadow-sm"
+          >
+            <!-- Icon -->
+            <div
+              class="w-20 flex items-start justify-center text-purple-700 rounded-full mr-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block;
+
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="duotone"
+                >
+                  <path
+                    d="M136,108A52,52,0,1,1,84,56,52,52,0,0,1,136,108Z"
+                    opacity="0.2"
+                  ></path>
+                  <path
+                    d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- Text Content -->
+            <div>
+              <h4 class="text-lg font-bold mb-1 text-[#78aac3]">
+                Professional Team
+              </h4>
+              <p class="text-gray-600 lg:text-md">
+                Our experienced medical professionals are certified, skilled,
+                and focused on natural-looking results. We stay ahead with the
+                latest techniques and training in aesthetics.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex items-start border border-gray-300 rounded-2xl p-6 mb-4 shadow-sm"
+          >
+            <div
+              class="w-20 flex items-start justify-center text-purple-700 rounded-full mr-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="duotone"
+                >
+                  <path
+                    d="M224,80V192a8,8,0,0,1-8,8H56a16,16,0,0,1-16-16V56A16,16,0,0,0,56,72H216A8,8,0,0,1,224,80Z"
+                    opacity="0.2"
+                  ></path>
+                  <path
+                    d="M216,64H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,56V184a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm0,128H56a8,8,0,0,1-8-8V78.63A23.84,23.84,0,0,0,56,80H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,132Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- Text Content -->
+            <div>
+              <h4 class="text-lg font-bold mb-1 text-[#78aac3]">
+                Affordable Price
+              </h4>
+              <p class="text-gray-600 lg:text-md">
+                We offer competitive rates without compromising on quality.
+                You’ll get premium treatments at prices you can feel good about.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-start border border-gray-300 rounded-2xl p-6 mb-4 shadow-sm"
+          >
+            <div
+              class="w-20 flex items-start justify-center text-purple-700 rounded-full mr-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="duotone"
+                >
+                  <path
+                    d="M80,104V208H32a8,8,0,0,1-8-8V112a8,8,0,0,1,8-8Z"
+                    opacity="0.2"
+                  ></path>
+                  <path
+                    d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- Text Content -->
+            <div>
+              <h4 class="text-lg font-bold mb-1 text-[#78aac3]">
+                Satisfying and Natural Services
+              </h4>
+              <p class="text-gray-600 lg:text-md">
+                We prioritize your satisfaction with every treatment. Most of
+                our clients become loyal regulars — and it’s not hard to see
+                why.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-start border border-gray-300 rounded-2xl p-6 mb-4 shadow-sm"
+          >
+            <div
+              class="w-20 flex items-start justify-center text-purple-700 rounded-full mr-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="duotone"
+                >
+                  <path
+                    d="M80,104V208H32a8,8,0,0,1-8-8V112a8,8,0,0,1,8-8Z"
+                    opacity="0.2"
+                  ></path>
+                  <path
+                    d="M234,80.12A24,24,0,0,0,216,72H160V56a40,40,0,0,0-40-40,8,8,0,0,0-7.16,4.42L75.06,96H32a16,16,0,0,0-16,16v88a16,16,0,0,0,16,16H204a24,24,0,0,0,23.82-21l12-96A24,24,0,0,0,234,80.12ZM32,112H72v88H32ZM223.94,97l-12,96a8,8,0,0,1-7.94,7H88V105.89l36.71-73.43A24,24,0,0,1,144,56V80a8,8,0,0,0,8,8h64a8,8,0,0,1,7.94,9Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <!-- Text Content -->
+            <div>
+              <h4 class="text-lg font-bold mb-1 text-[#78aac3]">
+                Personalized Care
+              </h4>
+              <p class="text-gray-600 lg:text-md">
+                We don’t believe in cookie-cutter beauty. Each treatment is
+                tailored to your unique goals, facial structure, and lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lg:px-12 md:px-8 px-4 py-10 mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-b-4xl overflow-hidden">
+          <img
+            src="./assets/images/woman3.png"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 text-lg font-semibold rounded-b-4xl"
+          >
+            Botox/Dysport $6.99*/Unit
+          </div>
+        </div>
+        <div class="rounded-b-4xl overflow-hidden">
+          <img
+            src="./assets/images/woman4.png"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 text-lg font-semibold rounded-b-4xl"
+          >
+            Dermal Filler $325*/Syringe
+          </div>
+        </div>
+        <div class="rounded-b-4xl overflow-hidden">
+          <img
+            src="./assets/images/woman5.jpeg"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 text-lg font-semibold rounded-b-4xl"
+          >
+            Sculptura $699*
+          </div>
+        </div>
+        <div class="rounded-b-4xl overflow-hidden">
+          <img
+            src="./assets/images/woman4.png"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 text-white text-lg font-semibold rounded-b-4xl"
+          >
+            PRP Face/Hair $399*/Treatment
+          </div>
+        </div>
+        <div class="rounded-b-4xl overflow-hidden shadow-md">
+          <img
+            src="./assets/images/woman7.png"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 text-white text-lg font-semibold rounded-b-4xl"
+          >
+            Collagen Induction/Salmon DNA $169/Treatment
+          </div>
+        </div>
+        <div class="rounded-b-4xl overflow-hidden">
+          <img
+            src="./assets/images/woman8.jpeg"
+            alt="Botox"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="bg-[#aedfbc] text-center py-5 lg:px-16 text-white text-lg font-semibold rounded-b-4xl"
+          >
+            Meostherapy/Lipoysis $499*/Treatment
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 lg:px-12 md:px-8 px-4">
+      <div class="mx-auto flex flex-col md:flex-row items-start gap-12">
+        <!-- Left Side: Text + FAQs -->
+        <div class="md:w-1/2 w-full">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl text-pink-400 mb-4">
+            FAQ About Our Services.
+          </h2>
+          <p class="text-lg opacity-85 my-10">
+            Have a health concern? Get 24/7 online access to ask a doctor and
+            get the answers you need, anytime, anywhere.
+          </p>
+
+          <div class="space-y-4 mt-12">
+            <!-- FAQ Item -->
+            <div class="border-t border-gray-300 pt-6">
+              <button
+                onclick="toggleFaq(0)"
+                class="w-full flex justify-between cursor-pointer items-center text-left text-lg font-bold focus:outline-none"
+              >
+                How long do Botox and filler results last?
+                <svg
+                  class="w-5 h-5 transform border cursor-pointer rounded-full text-gray-800 transition-transform duration-300 faq-icon rotate-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-4 hidden text-md opacity-80">
+                Botox typically lasts 3–4 months, while dermal fillers can last
+                6–18 months depending on the area treated. Regular touch-ups
+                help maintain a fresh, natural look.
+              </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+              <button
+                onclick="toggleFaq(1)"
+                class="w-full flex cursor-pointer justify-between items-center text-left text-lg font-bold focus:outline-none"
+              >
+                Is there any downtime after a treatment?
+                <svg
+                  class="w-5 h-5 transform border cursor-pointer rounded-full text-gray-800 transition-transform duration-300 faq-icon rotate-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-4 hidden text-md opacity-80">
+                Most treatments have little to no downtime — you can return to
+                daily activities right after! Some clients experience mild
+                swelling or redness that subsides within hours to a couple of
+                days.
+              </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+              <button
+                onclick="toggleFaq(2)"
+                class="w-full flex cursor-pointer justify-between items-center text-left text-lg font-bold focus:outline-none"
+              >
+                Do the treatments hurt?
+                <svg
+                  class="w-5 h-5 transform border cursor-pointer rounded-full text-gray-800 transition-transform duration-300 faq-icon rotate-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-4 hidden text-md opacity-80">
+                We prioritize comfort. Most clients describe the sensation as a
+                quick pinch. For added ease, we use premium numbing agents and
+                gentle injection techniques.
+              </div>
+            </div>
+            <div class="border-t border-gray-300 pt-6">
+              <button
+                onclick="toggleFaq(3)"
+                class="w-full flex cursor-pointer justify-between items-center text-left text-lg font-bold focus:outline-none"
+              >
+                Are your results natural-looking?
+                <svg
+                  class="w-5 h-5 transform border cursor-pointer rounded-full text-gray-800 transition-transform duration-300 faq-icon rotate-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-4 hidden text-md opacity-80">
+                Absolutely. Our philosophy is to enhance, not overdo. We
+                specialize in subtle, refined results that make you look
+                refreshed — never frozen or overfilled.
+              </div>
+            </div>
+            <div class="border-b border-t border-gray-300 py-6">
+              <button
+                onclick="toggleFaq(4)"
+                class="w-full flex cursor-pointer justify-between items-center text-left text-lg font-bold focus:outline-none"
+              >
+                Why choose Fresh Cosmetic Clinic?
+                <svg
+                  class="w-5 h-5 transform border cursor-pointer rounded-full text-gray-800 transition-transform duration-300 faq-icon rotate-0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer mt-4 hidden text-md opacity-80">
+                We’re rated #1 by our clients for a reason. With cutting-edge
+                treatments like Sculptra, PRP, and exosomes — and an expert,
+                caring team — we deliver results that speak for themselves. Your
+                glow-up starts here.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="md:w-1/2 w-full mx-auto flex">
+          <div class="rounded-xl overflow-hidden mx-auto flex">
+            <img
+              src="./assets/images/faq-image.png"
+              alt="FAQ Image"
+              class="w-full max-w-lg object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 py-10 md:px-8 lg:px-12">
+      <div
+        class="mx-auto bg-green-100 rounded-3xl items-start flex flex-col md:flex-row overflow-hidden shadow-md md:p-10 p-4"
+      >
+        <!-- Image -->
+        <div class="md:w-1/2 w-full relative">
+          <img
+            src="./assets/images/woman9.png"
+            alt="Client photo"
+            class="object-cover w-full h-full md:rounded-full"
+          />
+        </div>
+
+        <!-- Testimonial Content -->
+        <div class="md:w-1/2 w-full flex flex-col justify-center p-6 md:p-10">
+          <p class="text-gray-700 lg:text-4xl text-2xl leading-relaxed mb-6">
+            <span
+              class="text-5xl text-green-100 absolute -ml-4 -mt-6 select-none"
+              >“</span
+            >
+            "Best cosmetic clinic I've ever visited! The team is incredibly
+            welcoming, the injector is highly skilled, and the results speak for
+            themselves. From Botox to fillers and PRP, they use the latest
+            techniques and tech. Highly recommend!"
+          </p>
+          <div>
+            <p class="font-bold text-gray-900 tex-xl">Jessica William</p>
+            <p class="text-md text-gray-500">Client</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 lg:px-12 md:px-8 px-4">
+      <div class="mx-auto grid md:grid-cols-2 gap-6 items-start">
+        <!-- Left Column -->
+        <div class="space-y-6 text-lg text-gray-600">
+          <p class="text-lg font-medium">
+            We are experienced and internationally certified Cosmetic
+            Injectables in Toronto and Thornhill
+          </p>
+
+          <div class="space-y-2">
+            <p class="flex items-start gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                class="w-5 mt-1"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="fill"
+                >
+                  <path
+                    d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"
+                  ></path>
+                </g>
+              </svg>
+              <span>
+                Toronto Location: 132 Atlantic Avenue (Inside B. Suite) <br />
+                Thornhill Location: 7263 Yonge Street, Suite 269
+              </span>
+            </p>
+
+            <p class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                focusable="false"
+                class="w-5"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                  rgb(118, 84, 106))"
+                  weight="fill"
+                >
+                  <path
+                    d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"
+                  ></path>
+                </g>
+              </svg>
+
+              416.732.2219
+            </p>
+            <p class="flex items-center gap-2 underline">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5"
+                viewBox="0 0 256 256"
+                focusable="false"
+                color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                style="
+                  user-select: none;
+                  display: inline-block;
+                  fill: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  color: var(
+                    --token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1,
+                    rgb(118, 84, 106)
+                  );
+                  flex-shrink: 0;
+                "
+              >
+                <g
+                  color="var(--token-48e03a75-dfba-45f8-be7a-5ebb742f6ff1, rgb(118, 84, 106))"
+                  weight="fill"
+                >
+                  <path
+                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-8,144H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
+                  ></path>
+                </g>
+              </svg>
+              info@freshcosmeticclinic.com
+            </p>
+          </div>
+
+          <div
+            class="border-t-2 border-b-2 border-dashed border-gray-300 mt-12 py-12"
+          >
+            <h3 class="text-lg font-bold text-[#78aac3] mb-2">Page</h3>
+            <ul class="space-y-2 text-md">
+              <li><a href="#" class="hover:text-purple-600">About Us</a></li>
+              <li><a href="#" class="hover:text-purple-600">Services</a></li>
+              <li><a href="#" class="hover:text-purple-600">Contact Us</a></li>
+              <li><a href="#" class="hover:text-purple-600">FAQ</a></li>
+              <li>
+                <a href="#" class="hover:text-purple-600">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="text-md text-gray-800">
+            2023 © Fresh Cosmetic Clinic – Toronto Botox Clinic
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div
+          class="bg-[#ffd3dd] rounded-tl-[100px] rounded-bl-[100px] rounded-br-[100px] lg:px-10 md:px-6 px-4 py-10 text-center space-y-4"
+        >
+          <h2 class="text-3xl font-bold mb-6 text-gray-800">Hours</h2>
+
+          <div class="space-y-4 md:w-[90%] w-[99%] mx-auto">
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm"
+            >
+              <span>Monday - THORNHILL</span> <span>11:00 - 6:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm"
+            >
+              <span>Tuesday - TORONTO</span> <span>11:00 - 8:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm"
+            >
+              <span>Wednesday - THORNHILL</span> <span>11:00 - 6:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm"
+            >
+              <span>Thursday - TORONTO</span> <span>11:00 - 8:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm text-gray-400"
+            >
+              <span>Friday</span> <span>CLOSED</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm"
+            >
+              <span>Saturday - TORONTO</span> <span>10:00 - 5:00</span>
+            </div>
+            <div
+              class="flex justify-between items-center hover:scale-105 duration-300 bg-white rounded-lg py-3 px-4 shadow-sm text-gray-400"
+            >
+              <span>Sunday</span> <span>CLOSED</span>
+            </div>
+          </div>
+
+          <button
+            class="w-full bg-[#aedfbc] hover:bg-[#95d6a7] cursor-pointer text-sm font-semibold tracking-wider text-white py-4 rounded-full mt-4 duration-300"
+          >
+            MAKE AN APPOINTMENT
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleFaq(index) {
+        const answers = document.querySelectorAll(".faq-answer");
+        const icons = document.querySelectorAll(".faq-icon");
+
+        answers[index].classList.toggle("hidden");
+        icons[index].classList.toggle("rotate-180");
+      }
+    </script>
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <!-- Custom JS for toggle icon and animation -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navbar = document.getElementById("navbar-dropdown");
+      const menuOpenIcon = document.getElementById("menu-open-icon");
+      const menuCloseIcon = document.getElementById("menu-close-icon");
+
+      toggleBtn.addEventListener("click", () => {
+        const isHidden = navbar.classList.contains("max-h-0");
+
+        if (isHidden) {
+          navbar.classList.remove("hidden", "max-h-0");
+          navbar.classList.add("max-h-[500px]");
+        } else {
+          navbar.classList.remove("max-h-[500px]");
+          navbar.classList.add("max-h-0");
+        }
+
+        menuOpenIcon.classList.toggle("hidden");
+        menuCloseIcon.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
